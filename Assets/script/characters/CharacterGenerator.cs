@@ -236,7 +236,7 @@ namespace Game.Characters
                 case RaceType.Goblin: return 80f;
                 case RaceType.Elf: return 100f;
                 case RaceType.ElfNature: return 110f;
-                case RaceType.ElfWhite: return 105f;
+                case RaceType.WhiteElf: return 105f;
                 case RaceType.Human:
                 default: return 120f;
             }

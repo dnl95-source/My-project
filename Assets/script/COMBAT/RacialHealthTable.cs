@@ -1,3 +1,5 @@
+// Questa classe usa il RaceType globale (definito in Charactersattributes.cs)
+// per compatibilità con l'intero progetto
 public static class RacialHealthTable
 {
     public static int GetHealthByRace(RaceType race)
