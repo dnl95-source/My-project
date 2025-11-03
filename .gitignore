@@ -1,0 +1,46 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# User-specific files
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.unityproj
+
+# Visual Studio / JetBrains
+.vs/
+.vscode/
+.idea/
+
+# OS meta files
+.DS_Store
+Thumbs.db
+
+# Unity cache and exported packages
+ExportedObj/
+.cache/
+*.unitypackage
+
+# Addressables build data
+/Assets/AddressableAssetsData/*/*
+
+# Build output
+/Build/
+/Builds/
+
+# LFS note (add to repo manually if using LFS)
+# Use Git LFS for big files: models, textures, audio
+# git lfs track "*.fbx"
+# git lfs track "*.wav"
+# git lfs track "*.png"
