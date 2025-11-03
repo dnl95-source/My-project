@@ -5,10 +5,11 @@ namespace Game.Combat
         Human,
         Elf,
         ElfNature,
-        ElfWhite,
+        WhiteElf,
+        DarkElf,
         Orc,
         Goblin,
         Dwarf,
-        // aggiungi altre razze se servono
+        Ogre
     }
 }

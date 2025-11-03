@@ -1,4 +1,5 @@
 using UnityEngine;
+using Game.Combat;
 
 public class CharacterControllerBase : MonoBehaviour
 {
