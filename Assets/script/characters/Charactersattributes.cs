@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum RaceType { ElfNature, Human, Orc, Goblin, Dwarf, WhiteElf, DarkElf, Ogre }
+public enum RaceType { Human, Elf, ElfNature, WhiteElf, DarkElf, Orc, Goblin, Dwarf, Ogre }
 public enum Sex { Male, Female, None }
 public enum Kingdom { NatureElves, HumanKingdom1, HumanKingdom2, Dwarves, WhiteElves, DarkElves, Orcs, Goblins, Ogres, Godrik }
 
