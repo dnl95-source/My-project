@@ -1,0 +1,24 @@
+{
+  "factionId": "ghestard",
+  "displayName": "Ghestard",
+  "description": "Regno umano devoto alla sacra Lein. Protettori dei villaggi, combinano cavalleria e armi da fuoco leggere. Forte tradizione religiosa e senso della giustizia.",
+  "capitalCity": "GhexFalia",
+  "primaryBiomes": ["Plains", "Coast", "Forest"],
+  "techLevel": "Medium",
+  "alignment": "Good",
+  "allies": ["human_realm_1", "human_realm_2", "elf_white", "elf_nature"],
+  "enemies": ["human_island_slavers", "predoni", "orc_clans", "goblin_hordes", "dark_elf"],
+  "neutrals": ["dwarf_holds"],
+  "primaryColor": "#2C7BB6",
+  "secondaryColor": "#F6D365",
+  "militaryStrength": 70,
+  "wealthIndex": 60,
+  "spawnPriority": 0.8,
+  "keyNPCs": [
+    { "role": "Re", "npcName": "Heisen", "shortDescription": "Anziano e saggio, prudente re di Ghestard." },
+    { "role": "GranCavaliere Sacro", "npcName": "Folix", "shortDescription": "Capo militare leggendario, forte e giusto." },
+    { "role": "Principessa", "npcName": "Ixabel", "shortDescription": "Gestisce l'economia, carismatica e giusta." },
+    { "role": "Capo Gilda Avventurieri", "npcName": "Klork", "shortDescription": "Ex avventuriero, ora capo gilda, allegro e generoso." },
+    { "role": "Gran Mercante", "npcName": "Wesx", "shortDescription": "Ricco mercante, punto riferimento per equipaggiamento." }
+  ]
+}
