@@ -7,12 +7,28 @@ public enum Kingdom { NatureElves, HumanKingdom1, HumanKingdom2, Dwarves, WhiteE
 [System.Serializable]
 public class PhysicalAttributes
 {
-    public float Height;
-    public float Weight;
+    public float Height; // In centimetri
+    public float Weight; // In kg
     public float PenisSize;
     public float BreastSize;
-    public float Muscles;
-    public float BodyFat;
+    public float Muscles; // 0-100
+    public float BodyFat; // 0-100
+    
+    // Colori e caratteristiche visive
+    public string SkinColor;
+    public string HairColor;
+    public string EyeColor;
+    public string HairStyle;
+    
+    // Caratteristiche scheletriche speciali
+    public bool HasPointedEars;
+    public bool HasHorns;
+    public bool HasSaberTeeth;
+    public bool HasLongNose;
+    
+    // Tipo di corporatura
+    public RacePhysicalSpecs.BodyType BodyType;
+    public RacePhysicalSpecs.HairLength HairLength;
 }
 
 [System.Serializable]
