@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" fill="#2C7BB6"/>
+  <!-- croce stilizzata -->
+  <rect x="112" y="32" width="32" height="192" fill="#F6D365"/>
+  <rect x="48" y="112" width="160" height="32" fill="#F6D365"/>
+  <!-- piccolo cavallo stilizzato (semplice) -->
+  <g transform="translate(40,150)">
+    <rect x="0" y="0" width="24" height="14" fill="#F6D365"/>
+    <rect x="18" y="-6" width="8" height="8" fill="#F6D365"/>
+  </g>
+</svg>
