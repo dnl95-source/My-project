@@ -44,6 +44,13 @@ public static class EnhancedCharacterGenerator
     /// </summary>
     private static PhysicalAttributes GeneratePhysicalAttributes(RaceType race, Sex sex, RacePhysicalSpecs.PhysicalSpec specs)
     {
+        // Per umani, genera un tipo di corporatura casuale per varietà
+        var bodyType = specs.BodyType;
+        if (race == RaceType.Human)
+        {
+            bodyType = GetRandomHumanBodyType();
+        }
+
         var physical = new PhysicalAttributes
         {
             Height = RacePhysicalSpecs.GenerateRandomHeight(race),
@@ -54,15 +61,15 @@ public static class EnhancedCharacterGenerator
             HasHorns = specs.HasHorns,
             HasSaberTeeth = specs.HasSaberTeeth,
             HasLongNose = specs.HasLongNose,
-            BodyType = specs.BodyType,
+            BodyType = bodyType,
             HairLength = specs.HairLength
         };
 
         // Calcola peso basato su altezza e corporatura
-        physical.Weight = CalculateWeight(physical.Height, specs.BodyType, race);
+        physical.Weight = CalculateWeight(physical.Height, bodyType, race);
 
         // Genera muscoli e grasso corporeo basato sul tipo di corporatura
-        GenerateBodyComposition(physical, specs.BodyType);
+        GenerateBodyComposition(physical, bodyType);
 
         // Caratteristiche sessuali
         if (sex == Sex.Male)
@@ -85,6 +92,25 @@ public static class EnhancedCharacterGenerator
         physical.HairStyle = GenerateHairStyle(race, sex, specs.HairLength);
 
         return physical;
+    }
+
+    /// <summary>
+    /// Genera un tipo di corporatura casuale per umani (che hanno corporature variabili).
+    /// </summary>
+    private static RacePhysicalSpecs.BodyType GetRandomHumanBodyType()
+    {
+        // Umani possono avere qualsiasi tipo di corporatura
+        // Distribuzioni più comuni: Athletic e Thin più probabili
+        int rand = Random.Range(0, 100);
+        
+        if (rand < 25) return RacePhysicalSpecs.BodyType.Thin;
+        if (rand < 45) return RacePhysicalSpecs.BodyType.Athletic;
+        if (rand < 60) return RacePhysicalSpecs.BodyType.ThinToned;
+        if (rand < 75) return RacePhysicalSpecs.BodyType.Muscular;
+        if (rand < 85) return RacePhysicalSpecs.BodyType.Stocky;
+        if (rand < 92) return RacePhysicalSpecs.BodyType.Fat;
+        if (rand < 97) return RacePhysicalSpecs.BodyType.VeryMuscular;
+        return RacePhysicalSpecs.BodyType.FatMuscular;
     }
 
     /// <summary>

@@ -205,7 +205,7 @@ public static class RacePhysicalSpecs
                     MinHeight = 160f,
                     MaxHeight = 195f,
                     AvailableGenders = new List<Sex> { Sex.Male, Sex.Female },
-                    BodyType = BodyType.Variable, // Può essere qualsiasi
+                    BodyType = BodyType.Athletic, // Default - può essere modificato a runtime per varietà
                     SkinColors = new List<string> { "PaleSkin", "Tan", "Brown", "DarkBrown" },
                     HairColors = new List<string> { "Blonde", "Brown", "Black", "Red", "Auburn" },
                     EyeColors = new List<string> { "Black", "Blue", "Green", "Brown", "Grey" },
